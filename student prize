@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string mathGrade, englishGrade;
+    
+    
+    cout << "Did you get an A in Math? (yes/no): ";
+    cin >> mathGrade;
+    
+    cout << "Did you get an A in English? (yes/no): ";
+    cin >> englishGrade;
+    
+    
+    if (mathGrade == "yes" || englishGrade == "yes") {
+        cout << "You won a prize!" << endl;
+    } else {
+        cout << "No prize this time." << endl;
+    }
+    
+    return 0;
+}
