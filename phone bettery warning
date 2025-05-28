@@ -1,0 +1,25 @@
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int batteryPercentage;
+    string chargingStatus;
+    
+     
+    cout << "Enter current battery percentage: ";
+    cin >> batteryPercentage;
+    
+    
+    cout << "Is the phone charging? (yes/no): ";
+    cin >> chargingStatus;
+    
+    
+    if (batteryPercentage < 20 && chargingStatus == "no") {
+        cout << "Low battery! Please charge your phone." << endl;
+    }
+    
+    return 0;
+}
