@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float grade, attendance;
+    cout << "Enter grade (0-100): "; cin >> grade;
+    cout << "Enter attendance (%): "; cin >> attendance;
+
+    if (grade >= 90 && attendance >= 95) 
+        cout << "Eligible for scholarship!";
+    else 
+        cout << "Not eligible.";
+    return 0;
+}
