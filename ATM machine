@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double balance = 1500.50; 
+    double amount;
+    
+    cout << "=== ATM WITHDRAWAL ===\n";
+    cout << fixed << setprecision(2);
+    cout << "Current balance: $" << balance << "\n\n";
+    
+    cout << "Enter amount to withdraw: $";
+    cin >> amount;
+    
+   
+    if(amount <= 0) {
+        cout << "Seriously😂? Enter a real amount!\n";
+    } 
+    else if(amount > balance) {
+        cout << "Not enough money in account.\n";
+    }
+    else if((int)amount % 20 != 0) { 
+        cout << "ATM only gives $20 bills. Try $"
+             << ((int)amount / 20) * 20 << " instead.\n";
+    }
+    else {
+        balance -= amount;
+        cout << "\nDispensing $" << amount << "...\n";
+        cout << "New balance: $" << balance << "\n";
+        cout << "Thank you for banking with us!\n";
+    }
+    
+    return 0;
+}
