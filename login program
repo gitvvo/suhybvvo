@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string username, password;
+    const string correctUsername = "student";
+    const string correctPassword = "1234";
+
+    cout << "Login System\n";
+    cout << "------------\n";
+
+    cout << "Username: ";
+    getline(cin, username);
+
+    cout << "Password: ";
+    getline(cin, password);
+
+    if (username == correctUsername && password == correctPassword) {
+        cout << "\nAccess granted. Thank you for your teaching!\n";
+    } else {
+        cout << "\nAccess denied. Please try again.\n";
+    }
+
+    return 0;
+}
