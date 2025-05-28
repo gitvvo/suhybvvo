@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+     
+    int age = 20;
+    
+ 
+    double height = 5.8;
+    
+ 
+    cout << "Age: " << age << endl;
+    cout << "Height: " << height << endl;
+    
+    
+    int length = 4;
+    
+     
+    int width = 6;
+    
+
+    int area = length * width;
+    
+
+    cout << "Length: " << length << endl;
+    cout << "Width: " << width << endl;
+    cout << "Area: " << area << endl;
+    
+    return 0;
+}
